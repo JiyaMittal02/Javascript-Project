@@ -9,7 +9,7 @@ Assessment Requirements
 */
 
 // create a variable to hold your NFT's
-const arrayofNFTs=[]
+let arrayofNFTs=[]
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
@@ -29,7 +29,7 @@ function mintNFT (artworkname,artist,Yearofcreation,loc)
 // and print their metadata with console.log()
 function listNFTs () 
 {
-    for(i=0;i<arrayofNFTs.length;i++)
+    for(let i=0;i<arrayofNFTs.length;i++)
     {
         console.log("\nMetadata of NFT "+(i+1)+" is :-");
         console.log("Artwork name : "+arrayofNFTs[i]["Name of artwork"]);
